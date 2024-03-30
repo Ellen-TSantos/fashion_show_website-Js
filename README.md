@@ -60,7 +60,7 @@ This project consists of a website dedicated to a fashion show event, highlighti
   <br>
   <hr>
   <div>
-     <img alto="home-site" height="400" width="950" src="https://github.com/Ellen-TSantos/Loggi-Data-Analysis/assets/122386488/21b3c30f-1009-487d-bb5b-7e95ce272cf7">
+     <img alto="home-site" height="400" width="950" src="https://github.com/Ellen-TSantos/fashion_show_website-c/assets/122386488/e35f6304-7735-4d3b-a26a-c18aaa8af0f8">
     
   </div>
   
