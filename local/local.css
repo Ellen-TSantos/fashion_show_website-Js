@@ -1,0 +1,128 @@
+header {
+  background-image: url(/assets/img/img-location.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.title-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 10%;
+  transition: transform 0.1ms;
+}
+
+.title-nav:hover {
+  transform: scale(1.01);
+  border-bottom: 1px solid var(--four-color);
+  box-shadow: 5px 5px 5px var(--five-color);
+}
+
+.title-logotipo {
+  margin-left: 3%;
+  padding-top: 3%;
+  color: var(--one-color);
+  font-size: 20px;
+  padding-top: 5px;
+}
+
+.nav a {
+  color: var(--one-color);
+}
+.nav a.active::after {
+  width: 70% !important;
+  margin-left: 2px !important;
+}
+
+.title-location {
+  color: var(--fourteen-color);
+  font-size: 45px;
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  text-shadow: 0.1em 0.1em 0.2em var(--sixteen-color)
+}
+
+img {
+  width: 350px;
+  height: 300px;
+  box-shadow: 5px 5px 5px var(--five-color);
+  border-radius: 5px 10px 20px 30px;
+  margin: 5% 0% 2% 5%;
+  transition: transform 0.1ms;
+}
+img:hover {
+  transform: scale(1.1);
+  border-bottom: 1px solid var(--four-color);
+  box-shadow: 5px 5px 5px var(--five-color);
+}
+.location {
+  color: var(--two-color);
+  font-size: 24px;
+  margin-left: 15%;
+  margin-bottom: 5%;
+}
+.copan-history {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.text-history {
+  color: var(--two-color);
+  width: 50%;
+  font-size: 30px;
+}
+.arrive {
+  color: var(--fourteen-color);
+  font-size: 45px;
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 7%;
+  text-shadow: 0.1em 0.1em 0.2em var(--sixteen-color)
+}
+
+.how-to-get {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 380px;
+  margin-top: 5%;
+  text-shadow: 0.1em 0.1em 0.2em var(--sixteen-color)
+}
+iframe {
+  width: 400px;
+  height: 350px;
+  border: 0;
+  margin-bottom: 2%;
+  border-radius: 5px 10px 20px 30px;
+  box-shadow: 5px 5px 5px var(--five-color);
+}
+.title-details {
+  text-align: center;
+  color: var(--fourteen-color);
+  font-size: 34px;
+}
+.info-details {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5%;
+ 
+}
+.details {
+  margin-top: 2%;
+  margin-bottom: 3%;
+  color: var(--two-color);
+  font-size: 25px;
+  text-shadow: none;
+}
+.address {
+  color: var(--two-color);
+  font-size: 22px;
+  margin-left: 8%;
+  margin-bottom: 5%;
+}

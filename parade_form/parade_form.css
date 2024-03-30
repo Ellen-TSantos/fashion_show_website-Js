@@ -1,0 +1,209 @@
+header {
+  background-image: url(/assets/img/img-form_cover.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.title-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 10%;
+  transition: transform 0.1ms;
+}
+.title-nav:hover {
+  transform: scale(1.01);
+  border-bottom: 1px solid var(--four-color);
+  box-shadow: 5px 5px 5px var(--five-color);
+}
+.title-logotipo {
+  margin-left: 3%;
+  padding-top: 3%;
+  color: var(--one-color);
+  font-size: 20px;
+  padding-top: 5px;
+}
+
+.nav a {
+  color: var(--one-color);
+}
+.nav a.active::after {
+  width: 83% !important;
+  margin-left: 2px !important;
+}
+
+.form-phrase {
+  color: var(--two-color);
+  text-align: center;
+  font-size: 40px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.img-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--eleven-color);
+  width: 40%;
+  height: 90vh;
+  border-radius: 5px 10px 20px 30px;
+  border-bottom: 1px solid var(--four-color);
+  box-shadow: 5px 5px 5px var(--five-color);
+}
+.img-form > p {
+  color: var(--twelve-color);
+  font-size: 22px;
+  margin-top: 1%;
+}
+.img-form > h3 {
+  color: var(--one-color);
+  font-size: 30px;
+  margin-bottom: 1%;
+}
+img {
+  width: 400px;
+  height: 450px;
+  border-radius: 5px 10px 20px 30px;
+}
+.questions {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3%;
+  width: 40%;
+  height: 72vh;
+  background-color: var(--eleven-color);
+  border-radius: 5px 10px 20px 30px;
+  border-bottom: 1px solid var(--four-color);
+  box-shadow: 5px 5px 5px var(--five-color);
+}
+.form-info {
+  color: var(--one-color);
+  font-size: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 2%;
+  padding-top: 4%;
+}
+.form-info2 {
+  padding-top: 5%;
+  color: var(--one-color);
+  font-size: 25px;
+  margin-left: 5%;
+}
+.question {
+  color: var(--one-color);
+  font-weight: lighter;
+  padding-top: 5%;
+}
+.form-input {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: var(--one-color);
+  padding: 12px 13px 13px;
+  border-bottom: solid 1px var(--two-color);
+  width: 50%;
+}
+::placeholder {
+  color: var(--one-color);
+  opacity: 0.4;
+}
+.options {
+  display: flex;
+  flex-direction: row;
+  gap: 13px;
+  margin-top: 5%;
+  margin-left: 6%;
+}
+.question-inputs {
+  display: block;
+  position: relative;
+  margin-bottom: 12px;
+  margin-top: 8%;
+  padding-left: 30px;
+  cursor: pointer;
+  font-size: 25px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.question-inputs input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: var(--one-color);
+  border-radius: 50%;
+}
+.question-inputs:hover input ~ .checkmark {
+  background-color: var(--ten-color);
+}
+.question-inputs input:checked ~ .checkmark {
+  background-color: var(--nine-color);
+}
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.question-inputs input:checked ~ .checkmark:after {
+  display: block;
+}
+.question-inputs .checkmark:after {
+  top: 6px;
+  left: 6px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--one-color);
+}
+.confirm-presence {
+  color: var(--two-color);
+  margin-top: 2%;
+}
+.button-form {
+  margin: 7% 10% 6% 34%;
+  width: 30%;
+  height: 5vh;
+  background-color: var(--one-color);
+  color: var(--three-color);
+  border: none;
+  cursor: pointer;
+  border-radius: 3px 3px 3px 3px;
+  box-shadow: 5px 5px 5px var(--six-color);
+}
+.button-form:hover {
+  background-color: var(--seven-color);
+  color: var(--one-color);
+  box-shadow: 5px 5px 5px var(--eight-color);
+}
+#success-messages-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--one-color);
+  color: var(--two-color);
+  font-size: 25px;
+  padding: 50px;
+  text-align: center;
+  display: none;
+  border-radius: 5px 10px 20px 30px;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="local.css" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+
+    <script src="/event/index.js" defer></script>
+
+    <title>Local do Desfile</title>
+  </head>
+  <body>
+    <header>
+      <nav class="title-nav">
+        <h2 class="title-logotipo">FC 2024</h2>
+        <ul class="nav" style="list-style: none">
+          <li>
+            <a href="/home/home.html" onclick="changeActive(event)">Home</a>
+            <a
+              href="/parade_schedule/parade_schedule.html"
+              onclick="changeActive(event)"
+              >Programação</a
+            >
+            <a href="/about/about.html" onclick="changeActive(event)">Sobre</a>
+            <a href="/local/local.html" onclick="changeActive(event)">Local</a>
+            <a
+              href="/parade_form/parade_form.html"
+              onclick="changeActive(event)"
+              >Formulário</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <h1 class="title">Copan</h1>
+    </header>
+    <h1 class="title-location">Histórico Copan</h1>
+    <hr />
+    <main>
+      <div class="copan-history">
+        <img src="/assets/img/img-copan_parade.png" alt="Imagem Desfile Copan" />
+        <p class="text-history">
+          O Edifício Copan é um dos prédios mais simbólicos e importantes da
+          cidade de São Paulo. Famoso por suas curvas sinuosas e desenho
+          arrojado, ele foi projetado por um dos maiores arquitetos do mundo, o
+          brasileiro Oscar Niemeyer, e está localizado no centro da capital
+          paulista, uma área de grande movimentação.
+        </p>
+      </div>
+      <h3 class="location">Desfile Edifício Copan</h3>
+      <hr />
+      <h2 class="arrive">Como Chegar</h2>
+      <div class="how-to-get">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.607961487622!2d-46.64746922567804!3d-23.546598861048096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce584e838c007b%3A0xb3f27a85bf970c21!2sAv.%20Ipiranga%2C%20200%20-%20Centro%20Hist%C3%B3rico%20de%20S%C3%A3o%20Paulo%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001046-010!5e0!3m2!1spt-BR!2sbr!4v1699921673559!5m2!1spt-BR!2sbr"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+        <div class="info-details">
+          <p class="title-details">Avião</p>
+          <p class="details">
+            Do Aeroporto de Guarulhos, você pode pegar um ônibus da linha
+            Airport Bus Service até a Estação Tatuapé do metrô. Em seguida,
+            pegue a Linha 3 - Vermelha do metrô até a Estação República, que
+            fica próxima ao Copan.
+          </p>
+          <p class="title-details">Ônibus</p>
+          <p class="details">
+            O Edifício Copan está localizado no centro de São Paulo, e várias
+            linhas de ônibus servem a região. No entanto, as rotas de ônibus
+            podem mudar ao longo do tempo, e novas linhas podem ser adicionadas,
+            enquanto outras podem ser desativadas. Portanto, é recomendável
+            verificar as rotas de ônibus atualizadas no site da SPTrans (São
+            Paulo Transporte)
+          </p>
+        </div>
+      </div>
+      <p class="address">Av. Ipiranga, 200 - Centro, São Paulo - SP</p>
+      <hr />
+    </main>
+    <footer>
+      <p>Todos direitos reservados © Ellen Santos 2024</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,76 @@
+header {
+  background-image: url(/assets/img/img-cup_schedule.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.title-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 10%;
+  transition: transform 0.1ms;
+}
+
+.title-nav:hover {
+  transform: scale(1.01);
+  border-bottom: 1px solid var(--four-color);
+  box-shadow: 5px 5px 5px var(--five-color);
+}
+
+.title-logotipo {
+  margin-left: 3%;
+  padding-top: 3%;
+  color: var(--one-color);
+  font-size: 20px;
+  padding-top: 5px;
+}
+
+.nav a {
+  color: var(--one-color);
+}
+.nav a.active::after {
+  width: 85% !important;
+  margin-left: 2px !important;
+}
+
+.title-schedule {
+  color:var(--fourteen-color);
+  font-size: 48px;
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  text-shadow: 0.1em 0.1em 0.2em var(--sixteen-color)
+}
+.title-day {
+  margin-top: 4%;
+  margin-left: 10%;
+  color:var(--fourteen-color);
+  font-size: 30px;
+  text-shadow: 0.1em 0.1em 0.2em var(--sixteen-color)
+}
+.days {
+  margin-bottom: 5%;
+}
+.day {
+  margin-top: 2%;
+  margin-left: 5%;
+  font-size: 28px;
+  font-weight: bold;
+  color: var(--two-color);
+}
+.Prohibited,
+.timeline1 {
+  color: var(--two-color);
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 2%;
+  margin-left: 5%;
+}
+i {
+  color:var( --fifteen-color);
+  font-size: 21px;
+  margin-right: 5px;
+}
+

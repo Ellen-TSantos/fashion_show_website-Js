@@ -1,0 +1,115 @@
+header {
+  background-image: url(/assets/img/img-cup_about.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.title-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 10%;
+  transition: transform 0.1ms;
+}
+
+.title-nav:hover {
+  transform: scale(1.01);
+  border-bottom: 1px solid var(--four-color);
+  box-shadow: 5px 5px 5px var(--five-color);
+}
+
+.title-logotipo {
+  margin-left: 3%;
+  padding-top: 3%;
+  color: var(--one-color);
+  font-size: 20px;
+  padding-top: 5px;
+}
+
+.nav a {
+  color: var(--one-color);
+}
+.nav a.active::after {
+  width: 71% !important;
+  margin-left: 2px !important;
+}
+.phrase-schedule {
+  color:var(--fourteen-color);
+  font-size: 35px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  margin-bottom: 5%;
+  margin-top: 5%;
+  text-shadow: 0.1em 0.1em 0.2em var(--sixteen-color)
+}
+.schedule,
+.name-stylist {
+  color:var(--fourteen-color);
+  font-size: 35px;
+  margin-left: 15%;
+  text-shadow: 0.1em 0.1em 0.2em var(--sixteen-color)
+}
+
+.text-schedule,
+.text-stylist {
+  color: var(--two-color);
+  font-size: 28px;
+  width: 65%;
+  padding: 15px 0px;
+  text-shadow: none;
+}
+.text-stylist{
+  margin-left: 15%;
+}
+.name-text-stylist{
+  display: flex;
+  flex-direction: column;
+}
+
+.schedule1 {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.video-schedule1 {
+  width: 35%;
+  height: 35%;
+  margin-right: 10%;
+  border-radius: 5px 10px 20px 30px;
+}
+.video-schedule2 {
+  width: 35%;
+  height: 35%;
+  margin-left: 10%;
+  border-radius: 5px 10px 20px 30px;
+}
+
+video {
+  border-bottom: 1px solid var(--four-color);
+  box-shadow: 5px 5px 5px var(--five-color);
+}
+
+.img-stylist > img {
+  width: 340px;
+  height: 370px;
+  box-shadow: 5px 5px 5px var(--five-color);
+  border-radius: 5px 10px 20px 30px;
+  margin-left: 15%;
+  transition: transform 0.1ms;
+}
+.img-stylist > img:hover {
+  transform: scale(1.1);
+  border-bottom: 1px solid var(--four-color);
+  box-shadow: 5px 5px 5px var(--five-color);
+}
+.stylists-story {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3%;
+  margin-bottom: 5%;
+  margin-left: 15%;
+}

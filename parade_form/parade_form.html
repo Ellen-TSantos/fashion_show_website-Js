@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="parade_form.css" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+
+    <script src="/parade_form/parade_form.js" defer></script>
+    <script src="/event/index.js" defer></script>
+
+    <title>Formulário do desfile</title>
+  </head>
+  <body>
+    <header>
+      <nav class="title-nav">
+        <h2 class="title-logotipo">FC 2024</h2>
+        <ul class="nav" style="list-style: none">
+          <li>
+            <a href="/home/home.html" onclick="changeActive(event)">Home</a>
+            <a
+              href="/parade_schedule/parade_schedule.html"
+              onclick="changeActive(event)"
+              >Programação</a
+            >
+            <a href="/about/about.html" onclick="changeActive(event)">Sobre</a>
+            <a href="/local/local.html" onclick="changeActive(event)">Local</a>
+            <a
+              href="/parade_form/parade_form.html"
+              onclick="changeActive(event)"
+              >Formulário</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <h1 class="title">Formulário</h1>
+    </header>
+    <main>
+      <h1 class="form-phrase">
+        Antecipa a compra do seu Ingresso preencha o Formulário
+      </h1>
+      <hr />
+      <div class="form">
+        <div class="img-form">
+          <h3>Confirme sua presença</h3>
+          <img src="/assets/img/img-model_form.jpg" alt="Imagem modelo" />
+          <p>* Indica uma pregunta obrigatoria</p>
+        </div>
+      </div>
+
+      <div class="questions">
+        <form>
+          <div class="form-info">
+            <label for="nome"> Seu nome: *</label>
+            <input
+              class="form-input"
+              type="text"
+              id="nome"
+              name="nome"
+              placeholder="Digite seu nome"
+              required
+            />
+          </div>
+
+          <div class="form-info">
+            <label for="telefone"> Seu Telefone: *</label>
+            <input
+              class="form-input"
+              type="text"
+              id="telefone"
+              name="telefone"
+              placeholder="Digite seu telefone"
+              required
+            />
+          </div>
+
+          <div class="form-info">
+            <label for="email"> Seu E-mail: *</label>
+            <input
+              class="form-input"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Digite seu E-mail"
+              required
+            />
+          </div>
+
+          <div class="form-info">
+            <label for="nome">De qual Cidade ou Pais você está vindo? * </label>
+            <input
+              class="form-input"
+              type="text"
+              id="nome"
+              name="nome"
+              placeholder="Digite de onde você veio"
+              required
+            />
+          </div>
+        </form>
+      </div>
+
+      <div class="questions">
+        <form>
+          <div class="form-info2">
+            <h4 class="question">
+              Qual o tipo de Desfile da Fashion Closet você mais gosta? *
+            </h4>
+
+            <label class="question-inputs"
+              >Desfile Conceitual
+              <input type="radio" checked="checked" name="radio" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="question-inputs"
+              >Desfile Comercial
+              <input type="radio" name="radio" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="question-inputs"
+              >Desfile Sustentabilidade
+              <input type="radio" name="radio" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="question-inputs"
+              >Todos os Desfiles
+              <input type="radio" name="radio" />
+              <span class="checkmark"></span>
+            </label>
+          </div>
+        </form>
+      </div>
+
+      <div class="questions">
+        <form>
+          <div class="form-info2">
+            <h4 class="question">
+              Pronto(a) para conhecer o mundo da FASHION CLOSET?
+            </h4>
+            <p class="confirm-presence">Confirme sua presença!</p>
+            <label class="question-inputs"
+              >Sim
+              <input type="radio" name="radio" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="question-inputs"
+              >Não
+              <input type="radio" name="radio" />
+              <span class="checkmark"></span>
+            </label>
+            <label class="question-inputs"
+              >Talvez
+              <input type="radio" name="radio" />
+              <span class="checkmark"></span>
+            </label>
+          </div>
+          <div class="form-button">
+            <button class="button-form" type="button">
+              Confirmar Presença
+            </button>
+          </div>
+        </form>
+      </div>
+      <div id="success-messages-container"></div>
+    </main>
+    <hr />
+    <footer>
+      <p>Todos direitos reservados © Ellen Santos 2024</p>
+    </footer>
+  </body>
+</html>
