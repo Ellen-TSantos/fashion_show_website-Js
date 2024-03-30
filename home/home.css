@@ -64,6 +64,52 @@ header {
 
 }
 
+.container-flip{
+  position: relative;
+  width: 300px;
+  height: 400px;
+}
+
+.container-flip:hover .flip-image{
+  transform: rotateY(180deg);
+}
+
+.flip-image{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transition: .5s;
+}
+
+.front-image, .back-image{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px #0000001b;
+  backface-visibility: hidden;
+}
+
+.front-image{
+  background-size: cover;
+}
+
+.back-image{
+  background-color: var(--six-color);
+  transform: rotateY(180deg);
+ 
+}
+.back-image >p{
+  display: flex;
+  flex-direction: column;
+ margin-top:18%;
+ text-align: center;
+ font-size: 20px;
+ color:var(--thirteen-color);
+}
+
 .button-form {
   width:25%;
   height: 45px;
@@ -184,51 +230,8 @@ iframe {
 
 
 
-.container-flip{
-  position: relative;
-  width: 300px;
-  height: 400px;
-}
-
-.container-flip:hover .flip-image{
-  transform: rotateY(180deg);
-}
 
 
 
-.flip-image{
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  cursor: pointer;
-  transform-style: preserve-3d;
-  transition: .5s;
-}
-
-.front-image, .back-image{
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  border-radius: 20px;
-  box-shadow: 0px 0px 10px #0000001b;
-  backface-visibility: hidden;
-}
-
-.front-image{
-  background-size: cover;
-}
 
 
-.back-image{
-  background-color: var(--six-color);
-  transform: rotateY(180deg);
- 
-}
-p{
-  display: flex;
-  flex-direction: column;
- margin-top:18%;
- text-align: center;
- font-size: 20px;
- color:var(--thirteen-color);
-}

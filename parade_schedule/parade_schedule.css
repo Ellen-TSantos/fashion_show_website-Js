@@ -44,7 +44,7 @@ header {
   text-shadow: 0.1em 0.1em 0.2em var(--sixteen-color)
 }
 .title-day {
-  margin-top: 4%;
+  margin-top: 6%;
   margin-left: 10%;
   color:var(--fourteen-color);
   font-size: 30px;
@@ -52,9 +52,23 @@ header {
 }
 .days {
   margin-bottom: 5%;
+  width:60%;
+  height:50vh;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 1;
+  border-radius: 5px 10px 20px 30px;
+  border-bottom: 1px solid var(--four-color);
+  box-shadow: 2px 2px 2px 1px var(--five-color);
+}
+
+.days:hover{
+  transform: scale(1.1);
+  transition: 500ms;
+  cursor: pointer;
 }
 .day {
-  margin-top: 2%;
+  margin-top: 3%;
   margin-left: 5%;
   font-size: 28px;
   font-weight: bold;

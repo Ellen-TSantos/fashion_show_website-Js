@@ -44,11 +44,16 @@ header {
   margin-top: 5%;
   text-shadow: 0.1em 0.1em 0.2em var(--sixteen-color)
 }
-.schedule,
-.name-stylist {
+.schedule{
   color:var(--fourteen-color);
   font-size: 35px;
   margin-left: 15%;
+  text-shadow: 0.1em 0.1em 0.2em var(--sixteen-color)
+}
+.name-stylist {
+  color:var(--two-color);
+  font-size: 28px;
+  text-align: center;
   text-shadow: 0.1em 0.1em 0.2em var(--sixteen-color)
 }
 
@@ -92,24 +97,82 @@ video {
   box-shadow: 5px 5px 5px var(--five-color);
 }
 
-.img-stylist > img {
-  width: 340px;
-  height: 370px;
+.img-stylist{
+  width: 300px;
+  height: 400px;
   box-shadow: 5px 5px 5px var(--five-color);
   border-radius: 5px 10px 20px 30px;
-  margin-left: 15%;
-  transition: transform 0.1ms;
 }
-.img-stylist > img:hover {
-  transform: scale(1.1);
-  border-bottom: 1px solid var(--four-color);
-  box-shadow: 5px 5px 5px var(--five-color);
+
+.container-stylists {
+  width: 300px;
+  height: 400px;
+  margin: 3% auto 5% auto;
+  position: relative;
 }
-.stylists-story {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 3%;
-  margin-bottom: 5%;
-  margin-left: 15%;
+
+.container-stylists:hover .flip-image {
+  transform: translateX(-100%);
+}
+
+.flip-image{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transition: .5s;
+}
+.front-img-stylist, .back-text-stylist{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px #0000001b;
+  backface-visibility: hidden;
+}
+
+.front-img-stylist{
+  background-size: cover;
+}
+
+.info-stylist{
+  padding: 30px;
+  text-align: center;
+  font-size: 20px;
+  color:var(--thirteen-color);
+}
+.back-text-stylist{
+  background-color: var(--six-color);
+}
+
+
+
+@keyframes swing {
+  0% {
+      transform: translateX(0);
+  }
+  25% {
+      transform: translateX(-10px) rotate(-5deg);
+  }
+  50% {
+      transform: translateX(5px) rotate(3deg);
+  }
+  75% {
+      transform: translateX(-5px) rotate(-3deg);
+  }
+  100% {
+      transform: translateX(0) rotate(0);
+  }
+}
+
+.arrow {
+  color: var(--thirteen-color);
+  position: absolute;
+  margin: 5% 0 5% 3%;
+  animation: swing 1s infinite; /* Inicia a animação automaticamente e repete infinitamente */
+  transition: transform 0.3s ease;
+}
+.arrow:hover {
+  visibility: hidden;
 }
