@@ -4,6 +4,9 @@ document.addEventListener("DOMContentLoaded", function () {
     "Formulário enviado para o email cadastrado.",
   ];
 
+
+
+
   function showSuccessMessages() {
     let messagesContainer = document.getElementById(
       "success-messages-container"
@@ -31,25 +34,45 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  function validateForm() {
+  function validateForm(message) {
     let requiredInputs = document.querySelectorAll("[required]");
+    let errorMessagesContainer = document.getElementById("error-messages-container");
+    errorMessagesContainer.innerHTML = ""; 
 
-    for (var i = 0; i < requiredInputs.length; i++) {
-      if (!requiredInputs[i].value.trim()) {
-        alert("Por favor, preencha todos os campos obrigatórios.");
-        return false;
-      }
+    for (let i = 0; i < requiredInputs.length; i++) {
+        if (!requiredInputs[i].value.trim()) {
+          let errorMessage = document.createElement("p");
+            errorMessage.textContent = message;
+            errorMessagesContainer.appendChild(errorMessage);
+            return false;
+        }
     }
-
     return true;
-  }
+ }
 
-  function handleButtonClick() {
-    if (validateForm()) {
+
+function handleButtonClick() {
+  let errorMessagesContainer = document.getElementById("error-messages-container");
+  setTimeout(function () {
+    errorMessagesContainer.style.display = "block";
+    let errorMessage = "Por favor, preencha todos os campos obrigatórios.";
+    if (validateForm(errorMessage)) { 
       showSuccessMessages();
-    }
-  }
+      }
+    setTimeout(function () {
+      errorMessagesContainer.style.display = "none";
+    },1000);
+   
+
+  },1000);
+}
+
 
   let confirmButton = document.querySelector(".button-form");
   confirmButton.addEventListener("click", handleButtonClick);
+
+
+
+
+  
 });

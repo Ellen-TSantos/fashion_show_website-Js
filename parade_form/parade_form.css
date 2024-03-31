@@ -207,3 +207,16 @@ img {
   display: none;
   border-radius: 5px 10px 20px 30px;
 }
+#error-messages-container{
+  position: fixed;
+  bottom:25%;
+  right:15%;
+  transform: translate(-50%, -50%);
+  background-color: var(--thirteen-color);
+  color: var(--twelve-color);
+  font-size: 25px;
+  padding: 30px;
+  text-align: center;
+  display:none;
+  border-radius: 5px 10px 20px 30px;
+}
