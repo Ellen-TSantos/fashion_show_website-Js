@@ -60,10 +60,10 @@ This project consists of a website dedicated to a fashion show event, highlighti
   <br>
   <hr>
   <div>
-     <img alto="home-site" height="400" width="950" src="https://github.com/Ellen-TSantos/fashion_show_website-c/assets/122386488/e35f6304-7735-4d3b-a26a-c18aaa8af0f8">
+     <img alto="home-site" height="400" width="950" src="https://github.com/Ellen-TSantos/fashion_show_website-Js/assets/122386488/04572d95-aa88-446a-8c61-e10e2cfd6029">
     
   </div>
-  
+    <br><br>
   
 
 
