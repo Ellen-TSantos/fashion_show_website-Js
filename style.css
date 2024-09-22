@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
+
 * {
   margin: 0;
   padding: 0;
@@ -13,22 +14,89 @@ body {
 }
 header {
   width: 100%;
-  height: 90vh;
+  height:65vh;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
+ @media screen and (max-width:1024px) and (min-width:890px){
+  header{
+  height:28vh !important;
+  }
+}
+@media screen and (max-width:920px) and (min-width:320px){
+  header{
+  height:12vh !important;
+  }
+}
+main{
+  padding-top:5rem !important;
+}
+.cover-image  img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100% !important;
+  height:auto;
+}
+
+.gradient-image {
+  position: relative;
+  bottom: 16%;
+  width: 100%;
+  height: 17%;
+  background-image: linear-gradient(
+    to bottom,
+    transparent -1%,
+    var(--nine-color) 90%
+  );
+}
+
 hr {
   margin-left: auto;
   margin-right: auto;
   border-bottom: 1px solid var(--four-color);
   width: 60%;
+  margin-top: 2.5%;
 }
 .title {
+  position:relative;
   font-family: "Caveat", cursive;
   color: var(--one-color);
-  font-size: 90px;
-  text-align: center;
-  margin-top: 13%;
+  font-size:8rem;
+  top: 20rem;
+  left:26rem;
+  bottom:15rem;
 }
+
+ @media screen and (max-width:1064px){
+  .title{
+    left:18rem !important;
+    top:15rem;
+    bottom: 8rem;
+    font-size: 6.5rem;
+  }
+} 
+
+.name-nav {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 10%;
+  width: 100%;
+  top: 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 14%;
+  transition: transform 0.01ms;
+}
+.name-nav:hover {
+  transform: scale(1.01);
+  border-bottom: 1px solid var(--four-color);
+  box-shadow: 5px 5px 5px var(--five-color);
+}
+
+
+
+
 .nav a:hover {
   cursor: pointer;
   opacity: 0.6;
@@ -40,6 +108,7 @@ hr {
   font-size: 23px;
   padding-right: 20px;
   padding-bottom: 5px;
+
 }
 .nav a.active::after {
   content: "";
@@ -51,7 +120,78 @@ hr {
   height: 5px;
   background-color: var(--nine-color);
 }
+.nav a.active::after {
+  width: 73% !important;
+  margin-left: 2px !important;
+} 
+@media screen and (max-width:912px) {
+  .name-nav{
+  height: 7%;
+  }
+}
+@media screen and (max-width:744px) {
+  .nav a {
+  display: none !important;
+  }
+}
 
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  margin-top:4px;
+  background-color: #f9f9f95d;
+  min-width:80px;
+  box-shadow: 0px 8px 16px 0px #00000033;
+  border-radius:7px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding:7px 9px;
+  font-size:0.8rem !important;
+  text-decoration: none;
+  display: block;
+  border-radius:7px;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f152
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.name-logotipo-1 {
+  margin-left: 3%;
+  padding-top: 3%;
+  color: var(--three-color);
+  font-size: 24px;
+  padding-top: 5px;
+}
+.name-logotipo-2 {
+  margin-left: 3%;
+  padding-top: 3%;
+  color: var(--one-color);
+  font-size: 24px;
+  padding-top: 5px;
+}
+@media screen and (max-width:757px) {
+  .name-logotipo-1,
+  .name-logotipo-2{
+  padding-top:2px;
+  margin-left: 1.8%;
+  margin-bottom: 2%;
+  font-size:6.8em;
+  }
+}
 :root {
   --one-color: #fbfdfb;
   --two-color: #0000ff;
@@ -69,13 +209,39 @@ hr {
   --fourteen-color:#7e2559;
   --fifteen-color:#8f4f74;
   --sixteen-color: #5a5959;
+  --seventeen-color:#d65104;
+  --eighteen-color:#adff2f;
+  ---cor--color:#444d03;
 }
 footer {
-  margin-top: 2%;
-  margin-bottom: 2%;
+  margin-top:4em;
+  margin-bottom: 2em;
   color: var(--three-color);
   font-size: 15px;
   font-weight: bold;
   font-family: "Courier New", Courier, monospace;
   text-align: center;
+}
+
+
+/* Estilizando a barra de rolagem */
+::-webkit-scrollbar {
+  width: 8px; /* Largura da barra de rolagem */
+  height:5vh;
+}
+
+/* Estilizando a área de rolagem */
+::-webkit-scrollbar-track {
+  background-color: #1d1b1c;
+}
+
+/* Estilizando o thumb (o botão de arrastar) */
+::-webkit-scrollbar-thumb {
+  background-color:var( --nine-color);
+  border-radius: 6px; /* Adiciona bordas arredondadas ao thumb */
+}
+
+/* Estilizando o thumb quando hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #834f2f;
 }

@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="home.css" />
     <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
     <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
   
     <script src="/event/index.js" defer></script>
@@ -13,27 +16,70 @@
   </head>
   <body>
     <header>
-      <nav class="title-nav">
-        <h2 class="title-logotipo">FC 2024</h2>
+      <div class="cover-image">
+        <img  src="/assets/img/img-home_cup.png" alt="imagem rosto de modelo de capa">
+      </div>
+      <nav class="name-nav">
+        <h2 class="name-logotipo-1">FC 2024</h2>
         <ul class="nav" style="list-style: none">
           <li>
+            <div class="dropdown">
             <a  href="/home/home.html" onclick="changeActive(event)">Home</a>
+            <div class="dropdown-content">
+              <a href="#shudeles">Desfiles</a>
+              <a href="#objective-shudeles">Objetivo </a>
+              <a href="#location">Localização</a>
+            </div>
+          </div>
+
+          <div class="dropdown">
             <a  href="/parade_schedule/parade_schedule.html" onclick="changeActive(event)">Programação</a>
+            <div class="dropdown-content">
+              <a href="/parade_schedule/parade_schedule.html#day-1">Dia 1</a>
+              <a href="/parade_schedule/parade_schedule.html#day-2">Dia 2</a>
+              <a href="/parade_schedule/parade_schedule.html#day-3">Dia 3</a>
+            </div>
+          </div>
+
+          <div class="dropdown">
             <a href="/about/about.html" onclick="changeActive(event)">Sobre</a>
+            <div class="dropdown-content">
+              <a href="/about/about.html#conceptual-parade">Desfile Conceitual</a>
+              <a href="/about/about.html#commercial-parade">Desfile Comercial</a>
+              <a href="/about/about.html#sustainability-parade">Desfile Sustentabilidade</a>
+            </div>
+          </div>
+
+          <div class="dropdown">
             <a href="/local/local.html" onclick="changeActive(event)">Local</a>
+            <div class="dropdown-content">
+              <a href="/local/local.html#history">Histórico Copan</a>
+              <a href="/local/local.html#event-location">Como Chegar</a>
+            </div>
+          </div>
+           
+
+          <div class="dropdown">
             <a href="/parade_form/parade_form.html" onclick="changeActive(event)">Formulário</a>
+            <div class="dropdown-content">
+              <a href="/parade_form/parade_form.html#ticket">Ingresso</a>
+            </div>
+          </div>
+
           </li>
         </ul>
       </nav>
+      <div class="gradient-image"></div>
     </header>
-   <main>
-    <div class="title-day">
+  <main>
+    <div class="title-info-day">
       <h1>TRÊS DIAS DE FASHION CLOSET</h1>
     </div>
-    <section class="day"> 
+  <hr>
+    <section id="shudeles" class="container-card-day"> 
 
-      <section class="container-flip">
-        <h3>Desfile Conceitual</h3>
+      <section id="schudele-1" class="container-flip">
+        <h3 class="name-schedule">Desfile Conceitual</h3>
         <div class="flip-image"> 
         <div  class="front-image">
           <img
@@ -52,8 +98,8 @@
 
 
 
-      <section class="container-flip">
-        <h3>Desfile Comercial</h3>
+      <section id="schudele-2" class="container-flip">
+        <h3 class="name-schedule">Desfile Comercial</h3>
         <div class="flip-image">
         <div class="front-image">
         <img
@@ -72,8 +118,8 @@
 
 
 
-      <section class="container-flip">
-        <h3>Desfile Sustentabilidade</h3>
+      <section id="schudele-3" class="container-flip">
+        <h3 class="name-schedule">Desfile Sustentabilidade</h3>
         <div class="flip-image">
         <div class="front-image">
         <img
@@ -89,19 +135,20 @@
       </div>
     </div>    
   </section>
+
     </section>
 
 
-    <div class="form-button">
+  <div class="form-button">
       <a href="/parade_form/parade_form.html"
         ><button class="button-form">Confirmar Presença</button></a
-      >
+      > 
     </div>
-    <hr>
-    <div class="objective-parade">
+    <hr class="line-text-objective">
+     <div class="objective-parade">
       <h1>OBJETIVO DO DESFILE FASHION CLOSET</h1>
     </div>
-    <div  class="text-objective">
+    <div  id="objective-shudeles" class="text-objective">
       <p>
         "FASHION CLOSET busca promover a inclusão, refletindo a pluralidade de
         culturas, identidades e corpos em suas criações. Além disso, a
@@ -116,28 +163,32 @@
     </div>
     <hr>
     <div class="title-location">
-      <h2>Local</h3>
+      <h2 class="name-location">Local</h2>
+      </div>
+      <div class="container-info-location">
+    <div class="location-name-img">
+      <h3 class="name-copan">Copan</h3>
+      <p class="">Copan prédio desenhado por Oscar Niemeyer.</p>
+     <img class="image-copan" src="/assets/img/img-location.png" alt="Imagem Copan">
     </div>
-    <div class="location-name">
-      <h3>Copan</h3>
-      <h3>Endereço</h3>
+
+    <div class="location-maps-img">
+       <h3 class="name-address">Endereço</h3>
+       <p>Av. Ipiranga, 200 - Centro, São Paulo - SP</p>
+       <iframe class="iframe-location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.607961487622!2d-46.64746922567804!3d-23.546598861048096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce584e838c007b%3A0xb3f27a85bf970c21!2sAv.%20Ipiranga%2C%20200%20-%20Centro%20Hist%C3%B3rico%20de%20S%C3%A3o%20Paulo%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001046-010!5e0!3m2!1spt-BR!2sbr!4v1699921673559!5m2!1spt-BR!2sbr"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+       </iframe>
     </div>
-    <div class="location-data">
-      <p>Os desfiles estão espalhados pelo histórico Copan
-    prédio desenhado por Oscar Niemeyer. 
- </p>
- <p>Av. Ipiranga, 200 - Centro, São Paulo - SP</p></div>
-
- <img class="image-copan" src="/assets/img/img-location.png" alt="Imagem Copan">
- <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.607961487622!2d-46.64746922567804!3d-23.546598861048096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce584e838c007b%3A0xb3f27a85bf970c21!2sAv.%20Ipiranga%2C%20200%20-%20Centro%20Hist%C3%B3rico%20de%20S%C3%A3o%20Paulo%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001046-010!5e0!3m2!1spt-BR!2sbr!4v1699921673559!5m2!1spt-BR!2sbr"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-  <hr>
-
-  <p class="text">Esperamos por você confirme sua presença</p>
-  <div class="confirmation-card">
-    <img src="/assets/img/img-confirmation_card.png" alt="Imagem do cartão de confirmação">
   </div>
 
-   <p class="social-networks">Nossa Redes Sociais</p>
+  <hr>
+  
+     <p class="text">Confirme sua presença!</p>
+  
+  <div class="card">
+    <img class="confirmation-card" src="/assets/img/img-confirmation_card.png" alt="Imagem do cartão de confirmação">
+  </div>
+
+  <p class="social-networks">Nossa Redes Sociais</p>
    <div class="icons">
    <i href="https://pt-br.facebook.com/login.php" class="fa-brands fa-facebook" style="color: #07337d;"></i>
    <i href="https://www.instagram.com/?hl=pt_BR" class="fa-brands fa-instagram" style="color: #9704aa;"></i>
@@ -145,9 +196,9 @@
    <i href="https://web.whatsapp.com/" class="fa-brands fa-whatsapp" style="color: #275e03;"></i>
    </div>
    <hr>
-  </main>
+  </main>  
    <footer>
     <p> Todos direitos reservados © Ellen Santos 2024</p>
-   </footer>
+   </footer>  
 </body>
 </html>

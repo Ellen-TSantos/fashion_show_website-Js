@@ -9,29 +9,98 @@
  
     <script src="/event/index.js" defer></script>
 
+
     <title>Programação dos Desfiles</title>
   </head>
   <body>
+    <video id="video-background" autoplay muted loop>
+      <source src="/assets/img/parade.mp4" type="video/mp4">
+
+    </video>
+    <div id="overlay"><div class="gradient-img"></div>
+  </div>  
+
     <header>
-      <nav class="title-nav">
-        <h2 class="title-logotipo">FC 2024</h2>
+      <nav class="name-nav">
+        <a
+          class="name-logotipo-2"
+          href="/home/home.html"
+          >FC 2024</a
+        >
         <ul class="nav" style="list-style: none">
           <li>
-            <a href="/home/home.html" onclick="changeActive(event)">Home</a>
-            <a href="/parade_schedule/parade_schedule.html" onclick="changeActive(event)">Programação</a>
-            <a href="/about/about.html" onclick="changeActive(event)">Sobre</a>
-            <a href="/local/local.html" onclick="changeActive(event)">Local</a>
-            <a href="/parade_form/parade_form.html" onclick="changeActive(event)">Formulário</a>
+            <div class="dropdown">
+              <a href="/home/home.html" onclick="changeActive(event)">Home</a>
+              <div class="dropdown-content">
+                <a href="/home/home.html#shudeles">Desfiles</a>
+                <a href="/home/home.html#objective-shudeles">Objetivo </a>
+                <a href="/home/home.html#location">Localização</a>
+              </div>
+            </div>
+
+            <div class="dropdown">
+              <a
+                href="/parade_schedule/parade_schedule.html"
+                onclick="changeActive(event)"
+                >Programação</a
+              >
+              <div class="dropdown-content">
+                <a href="/parade_schedule/parade_schedule.html#day-1">Dia 1</a>
+                <a href="/parade_schedule/parade_schedule.html#day-2">Dia 2</a>
+                <a href="/parade_schedule/parade_schedule.html#day-3">Dia 3</a>
+              </div>
+            </div>
+
+            <div class="dropdown">
+              <a href="/about/about.html" onclick="changeActive(event)"
+                >Sobre</a
+              >
+              <div class="dropdown-content">
+                <a href="/about/about.html#conceptual-parade"
+                  >Desfile Conceitual</a
+                >
+                <a href="/about/about.html#commercial-parade"
+                  >Desfile Comercial</a
+                >
+                <a href="/about/about.html#sustainability-parade"
+                  >Desfile Sustentabilidade</a
+                >
+              </div>
+            </div>
+
+            <div class="dropdown">
+              <a href="/local/local.html" onclick="changeActive(event)"
+                >Local</a
+              >
+              <div class="dropdown-content">
+                <a href="/local/local.html#history">Histórico Copan</a>
+                <a href="/local/local.html#event-location">Como Chegar</a>
+              </div>
+            </div>
+
+            <div class="dropdown">
+              <a
+                href="/parade_form/parade_form.html"
+                onclick="changeActive(event)"
+                >Formulário</a
+              >
+              <div class="dropdown-content">
+                <a href="/parade_form/parade_form.html#ticket">Ingresso</a>
+              </div>
+            </div>
           </li>
         </ul>
       </nav>
-      <h1 class="title">Programação</h1>
-    </header>
+      <div class="title-programming">
+        <h1>Programação</h1>
+      </div>   
+     </header>
     <main>
+      <div class="container-form"> 
       <h1 class="title-schedule">Acompanhe nossa Programação</h1>
       <hr />
       <div class="days">
-        <h3 class="title-day">Dia 1</h3>
+        <h3 id="day-1" class="title-day">Dia 1</h3>
         <p class="day"><i class="fa-solid fa-calendar-days" ></i>20/04/2024</p>
         <p class="Prohibited"><i class="fa-solid fa-clock" ></i></i>Entrada : 10 - 13h</p>
         <p class="timeline1">
@@ -44,7 +113,7 @@
       </div>
       <hr />
       <div class="days">
-        <h3 class="title-day">Dia 2</h3>
+        <h3  id="day-2" class="title-day">Dia 2</h3>
         <p class="day"><i class="fa-solid fa-calendar-days" ></i>21/04/2024</p>
         <p class="Prohibited"><i class="fa-solid fa-clock" ></i></i>Entrada : 10 - 13h</p>
         <p class="timeline1">
@@ -57,7 +126,7 @@
       </div>
       <hr />
       <div class="days">
-        <h3 class="title-day">Dia 3</h3>
+        <h3 id="day-3" class="title-day">Dia 3</h3>
         <p class="day"><i class="fa-solid fa-calendar-days" ></i>22/04/2024</p>
         <p class="Prohibited"><i class="fa-solid fa-clock" ></i>Entrada : 10 - 13h</p>
         <p class="timeline1">
@@ -73,9 +142,12 @@
         </p>
       </div>
       <hr />
+      </div>
     </main>
+
     <footer>
       <p>Todos direitos reservados © Ellen Santos 2024</p>
     </footer>
+    
   </body>
 </html>

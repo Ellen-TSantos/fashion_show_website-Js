@@ -17,110 +17,172 @@
   </head>
   <body>
     <header>
-      <nav class="title-nav">
-        <h2 class="title-logotipo">FC 2023</h2>
+      <div class="cover-image">
+        <img
+          src="/assets/img/img-cup_about.png"
+          alt="imagem varios modelos na passarela"
+        />
+      </div>
+   
+         <nav class="name-nav">
+        <a
+          class="name-logotipo-2"
+          href="/home/home.html"
+          >FC 2024</a
+        >
         <ul class="nav" style="list-style: none">
           <li>
-            <a href="/home/home.html" onclick="changeActive(event)">Home</a>
-            <a
-              href="/parade_schedule/parade_schedule.html"
-              onclick="changeActive(event)"
-              >Programação</a
-            >
-            <a href="/about/about.html" onclick="changeActive(event)">Sobre</a>
-            <a href="/local/local.html" onclick="changeActive(event)">Local</a>
-            <a
-              href="/parade_form/parade_form.html"
-              onclick="changeActive(event)"
-              >Formulário</a
-            >
+            <div class="dropdown">
+              <a href="/home/home.html" onclick="changeActive(event)">Home</a>
+              <div class="dropdown-content">
+                <a href="/home/home.html#shudeles">Desfiles</a>
+                <a href="/home/home.html#objective-shudeles">Objetivo </a>
+                <a href="/home/home.html#location">Localização</a>
+              </div>
+            </div>
+
+            <div class="dropdown">
+              <a
+                href="/parade_schedule/parade_schedule.html"
+                onclick="changeActive(event)"
+                >Programação</a
+              >
+              <div class="dropdown-content">
+                <a href="/parade_schedule/parade_schedule.html#day-1">Dia 1</a>
+                <a href="/parade_schedule/parade_schedule.html#day-2">Dia 2</a>
+                <a href="/parade_schedule/parade_schedule.html#day-3">Dia 3</a>
+              </div>
+            </div>
+
+            <div class="dropdown">
+              <a href="/about/about.html" onclick="changeActive(event)"
+                >Sobre</a
+              >
+              <div class="dropdown-content">
+                <a href="/about/about.html#conceptual-parade"
+                  >Desfile Conceitual</a
+                >
+                <a href="/about/about.html#commercial-parade"
+                  >Desfile Comercial</a
+                >
+                <a href="/about/about.html#sustainability-parade"
+                  >Desfile Sustentabilidade</a
+                >
+              </div>
+            </div>
+
+            <div class="dropdown">
+              <a href="/local/local.html" onclick="changeActive(event)"
+                >Local</a
+              >
+              <div class="dropdown-content">
+                <a href="/local/local.html#history">Histórico Copan</a>
+                <a href="/local/local.html#event-location">Como Chegar</a>
+              </div>
+            </div>
+
+            <div class="dropdown">
+              <a
+                href="/parade_form/parade_form.html"
+                onclick="changeActive(event)"
+                >Formulário</a
+              >
+              <div class="dropdown-content">
+                <a href="/parade_form/parade_form.html#ticket">Ingresso</a>
+              </div>
+            </div>
           </li>
         </ul>
       </nav>
-      <h1 class="title">Desfiles</h1>
+      <div class="title-about">
+        <h1>Desfiles</h1>
+      </div>
+      <div class="gradient-image"></div>
     </header>
 
     <main>
-      <h1 class="phrase-schedule">
-        "Os desfiles de moda são mais do que simples apresentações de roupas;
-        eles carregam mensagens e propósitos variados"
-      </h1>
-      <hr />
-      <div class="schedule1">
-        <h2 class="schedule">
-          Desfile Conceitual
-          <p class="text-schedule">
-            Exploram a criatividade e a expressão artística, desafiando normas
-            tradicionais para inspirar a imaginação e provocar reflexão. Atravez
-            desse desfile você irá conhecer o(a) estislista e toda sua
-            criatividade.
-          </p>
-        </h2>
-        <video class="video-schedule1" controls autoplay>
-          <source src="/videos/01.mp4" type="video/mp4" />
-        </video>
-      </div>
-      <hr />
-      <div class="schedule1">
-        <video class="video-schedule2" controls autoplay>
-          <source src="/videos/02.mp4" type="video/mp4" />
-        </video>
-        <h2 class="schedule">
-          Desfile Comercial
-          <p class="text-schedule">
-            Apresentam coleções prontas para venda, visando atrair consumidores
-            e impulsionar as vendas, sendo fundamentais para as marcas.
-          </p>
-        </h2>
-      </div>
-      <hr />
-
-      <div class="schedule1">
-        <h2 class="schedule">
-          Desfile Sustentabilidade
-          <p class="text-schedule">
-            Destacam a moda sustentável, promovendo práticas éticas e ecológicas
-            para inspirar o consumo responsável e a preservação ambiental.
-          </p>
-        </h2>
-        <video class="video-schedule1" controls autoplay>
-          <source src="/videos/03.mp4" type="video/mp4" />
-        </video>
-      </div>
-      <hr />
-
-      <h2 class="phrase-schedule">
-        Cada tipo de desfile desempenha um papel importante na indústria da
-        moda, moldando a forma como vemos a moda e transmitindo mensagens
-        significativas.
-      </h2>
-      <h2 class="name-stylist">ESTILISTA ISADORA VIEIRA</h2>
-
-      <div class="container-stylists">
-        <div class="back-text-stylist">
-          <p class="info-stylist">
-            Continua a surpreender o mundo da moda com suas criações inovadoras
-            e é uma figura icônica na indústria que influencia e inspira novos
-            talentos em todo o mundo. Sua dedicação à moda e ao seu compromisso
-            com a responsabilidade ambiental fazem dela uma estilista
-            verdadeiramente notável.
-          </p>
+      <div class="container-parade">
+        <h1 class="parade-phrase">
+          "Os desfiles de moda são mais do que simples apresentações de roupas;
+          eles carregam mensagens e propósitos variados"
+        </h1>
+        <hr />
+        <div id="conceptual-parade" class="parades">
+          <h2 class="parade">
+            Desfile Conceitual
+            <p class="text-parade">
+              Exploram a criatividade e a expressão artística, desafiando normas
+              tradicionais para inspirar a imaginação e provocar reflexão.
+              Atravez desse desfile você irá conhecer o(a) estislista e toda sua
+              criatividade.
+            </p>
+          </h2>
+          <video class="video-parade1" controls autoplay>
+            <source src="/videos/01.mp4" type="video/mp4" />
+          </video>
         </div>
-        <div class="flip-image">
-          <div class="front-img-stylist">
-           
-            <i class="arrow fa-solid fa-angle-left arrow" ></i>
+        <hr />
+        <div id="commercial-parade" class="parades">
+          <video class="video-parade2" controls autoplay>
+            <source src="/videos/02.mp4" type="video/mp4" />
+          </video>
+          <h2 class="parade">
+            Desfile Comercial
+            <p class="text-parade">
+              Apresentam coleções prontas para venda, visando atrair
+              consumidores e impulsionar as vendas, sendo fundamentais para as
+              marcas.
+            </p>
+          </h2>
+        </div>
+        <hr />
+
+        <div id="sustainability-parade" class="parades">
+          <h2 class="parade">
+            Desfile Sustentabilidade
+            <p class="text-parade">
+              Destacam a moda sustentável, promovendo práticas éticas e
+              ecológicas para inspirar o consumo responsável e a preservação
+              ambiental.
+            </p>
+          </h2>
+          <video class="video-parade1" controls autoplay>
+            <source src="/videos/03.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <hr />
+
+        <h2 class="parade-phrase">
+          Cada tipo de desfile desempenha um papel importante na indústria da
+          moda, moldando a forma como vemos a moda e transmitindo mensagens
+          significativas.
+        </h2>
+        <h2 class="name-stylist">ESTILISTA ISADORA VIEIRA</h2>
+
+        <div class="container-stylists">
+          <div class="back-text-stylist">
+            <p class="info-stylist">
+              Continua a surpreender o mundo da moda com suas criações
+              inovadoras e é uma figura icônica na indústria que influencia e
+              inspira novos talentos em todo o mundo. Sua dedicação à moda e ao
+              seu compromisso com a responsabilidade ambiental fazem dela uma
+              estilista verdadeiramente notável.
+            </p>
+          </div>
+          <div class="flip-image">
+            <div class="front-img-stylist">
+              <i class="arrow fa-solid fa-angle-left arrow"></i>
               <img
-              class="img-stylist"
-              src="/assets/img/img-stylist.png"
-              alt="Imagem da estilista"
-            />
-        
+                class="img-stylist"
+                src="/assets/img/img-stylist.png"
+                alt="Imagem da estilista"
+              />
+            </div>
           </div>
         </div>
-      </div>
 
-      <hr />
+        <hr />
+      </div>
     </main>
     <footer>
       <p>Todos direitos reservados © Ellen Santos 2024</p>
